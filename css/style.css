@@ -25,10 +25,6 @@ body{
     color: #565656;
     font-weight: 500;
 }
-a:hover {
-  color: #dd5a92;
-  text-decoration: none;
-}
 #header {
   background: #fff;
   transition: all 0.5s;
@@ -402,7 +398,7 @@ a:hover {
 
 /* section02 */
 #section02{
-    background-image: url(../images/main-bg2.jpg);
+    background-image: url(../assets/img/main-bg2.jpg);
     width: 100%;
     height: auto;
 }
@@ -548,7 +544,8 @@ a:hover {
 }
 
 .testimonials{
-  padding: 50px;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 .testimonials .testimonial-item {
   box-sizing: content-box;
@@ -558,19 +555,19 @@ a:hover {
 .testimonials .testimonial-item .testimonial-img {
   width: 130px;
   border-radius: 50%;
-  margin: -40px 0 0 40px;
+  margin: -50px 0 0 40px;
   position: relative;
   z-index: 2;
   margin: 0 auto;
-  top: 40px;
+  top: 50px;
 }
 
 
 .testimonials .testimonial-item p {
   margin: 0 10px 0 10px;
-  padding-top: 16%;
+  padding-top: 18%;
   width: 350px;
-  height: 270px;
+  height: 290px;
   background: #fff;
   position: relative;
   border-radius: 6px;
@@ -599,11 +596,12 @@ a:hover {
     padding-bottom: 8%;
   }
   .testimonials .testimonial-item p {
-    padding-top: 20%;
-    padding-left: 10px;
-    padding-right: 10px;
+    margin: 0 10px;
+    padding-top: 27%;
+    padding-left: 15px;
+    padding-right: 15px;
     width: 240px;
-    height: 280px;
+    height: 300px;
   }
   
   .testimonials .testimonial-item .testimonial-img {
@@ -613,9 +611,9 @@ a:hover {
 
 @media (max-width: 500px){
   .testimonials .testimonial-item p {
-    padding-top: 20%;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 300px;
     height: 280px;
     margin: 0 auto;
@@ -636,4 +634,57 @@ a:hover {
     margin: 0 auto;
   }
  
+}
+
+/* footer */
+footer{
+  width:100%;
+  height: auto;
+  background: #c09777;
+  font-size: 12px;
+  color: #fff;
+  display:flex;
+  padding: 25px 0;
+}
+footer img{
+  width: 100px;
+  padding-top: 30%;
+}
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #fff;
+}
+.footer_top{
+  padding-top: 15px;
+  letter-spacing: 1px;
+}
+.footer_right{
+  padding-top: 50px;
+  text-align: right;
+}
+
+@media (max-width:768px){
+  footer img{
+    width: 130px;
+    padding-top: 120%;
+    padding-right: 60px;
+  }
+}
+@media (max-width:500px){
+  footer{
+    padding: 10px 0;
+    text-align: center;
+  }
+  footer img{
+    padding: 10px 0 5px 0;
+    width: 100px;
+    margin: 0 auto;
+  }
+  .footer_right{
+    padding-top: 5px;
+    text-align: center;
+  }
 }
