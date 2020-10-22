@@ -439,7 +439,7 @@ body{
   padding-bottom: 7%;
 }
 #gallery p{
-  font-size: 65px;
+  font-size: 35px;
   color: #dbb99e;
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bold;
@@ -512,7 +512,7 @@ body{
   padding-bottom: 3%;
 }
 .review{
-  font-size: 65px;
+  font-size: 35px;
   color: #dbb99e;
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bold;
@@ -626,11 +626,11 @@ body{
 }
 @media (max-width: 415px){
   .testimonials .testimonial-item p {
-    padding-top: 20%;
+    padding-top: 18%;
     padding-left: 20px;
     padding-right: 20px;
     width: 250px;
-    height: 280px;
+    height: 300px;
     margin: 0 auto;
   }
  
