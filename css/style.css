@@ -442,13 +442,13 @@ body{
   font-weight: bold;
   padding: 6% 0 1% 15%;
 }
-.slider{
-  width: 80%;
+#gallery .slider{
+  width: 70%;
   margin: 0 auto;
   vertical-align: middle;
 }
 .carousel-inner{
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 .ovarlay_slide_cont {
@@ -475,7 +475,7 @@ body{
     font-size: 55px;
     padding: 8% 0 5% 5%;
   }
-  .slider{
+  #gallery .slider{
     width: 100%;
   }
   .carousel-inner{
@@ -702,24 +702,24 @@ footer a:hover{
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bold;
 }
-.slider {
+#rooms .slider {
   list-style:none;
   height:400px;
   overflow:hidden;
 }
-.slider:after {
+#rooms .slider:after {
   content:'';
   display:block;
   clear:both;
 }
-.slider li {
+#rooms .slider li {
   position:absolute;
   top:0;
   left:0;
   height:500px;
   opacity:0;
 }
-.slider li div{
+#rooms .slider li div{
   width: 600px;
   height: 400px;
   background-size:cover;
