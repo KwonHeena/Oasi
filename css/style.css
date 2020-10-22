@@ -269,15 +269,12 @@ body{
 #gtco-header {
   background-image: url(../assets/img/main-bg.jpg);
   background-size: cover;
-  height: 800px;
+  height: 900px;
   background-position: bottom center;
   width: 100%;
   overflow-x: hidden;
 }
 
-@media(max-width: 768px){
- 
-}
 /* navi end */
 
 .section .section-center {
@@ -472,9 +469,10 @@ body{
 .carousel-indicators li{
    margin: 0 2px;
 }
-@media(max-width:767px){
+@media(max-width:768px){
   #gallery{
-    padding-bottom: 12%;
+    padding-top: 5%;
+    padding-bottom: 20%;
   }
   #gallery>p{
     font-size: 55px;
@@ -561,8 +559,6 @@ body{
   margin: 0 auto;
   top: 50px;
 }
-
-
 .testimonials .testimonial-item p {
   margin: 0 10px 0 10px;
   padding-top: 18%;
@@ -591,9 +587,14 @@ body{
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .review{
+    font-size: 55px;
+    padding: 8% 0 0 5%;
+  }
   #review{
-    padding-bottom: 8%;
+    padding-bottom: 10%;
+    padding-top: 3%;
   }
   .testimonials .testimonial-item p {
     margin: 0 10px;
@@ -603,7 +604,6 @@ body{
     width: 240px;
     height: 300px;
   }
-  
   .testimonials .testimonial-item .testimonial-img {
     width: 120px;
   }
