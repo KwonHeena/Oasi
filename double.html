@@ -23,7 +23,13 @@
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <!-- wow -->
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-1.12.2.js"
+  integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY="
+  crossorigin="anonymous"></script>
   <!-- css -->
   <link rel="stylesheet" href="css/style.css">
   </head>
@@ -35,7 +41,7 @@
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
-                    <li class="drop-down"><a href="Rooms.html">Rooms</a>
+                    <li class="drop-down"><a href="double.html">Rooms</a>
                         <ul>
                             <li><a href="double.html">Double Room</a></li>
                             <li><a href="#">Delux Room</a></li>
@@ -53,31 +59,23 @@
         <div class="container">
             <h1 class="text-left">Double Room</h1>
             <div class="row">
-                <div class="col-sm-7">
-                    <ul class="slider">
-                        <li>
-                            <div style="background-image:url('assets/img/single1.jpg')">
-                            </div>
-                        </li>
-                        <li>
-                            <div style="background-image:url('assets/img/single2.jpg');">
-                            </div>
-                        </li>
-                        <li>
-                            <div style="background-image:url('assets/img/single3.jpg');">
-                            </div>
-                        </li>
-                        <li>
-                            <div style="background-image:url('assets/img/single4.jpg');">
-                            </div>
-                        </li>
-                        <li>
-                            <div style="background-image:url('assets/img/single5.jpg');">
-                            </div>
-                        </li>
-                    </ul>
+                <div class="col-sm-8">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="assets/img/single1.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="assets/img/single2.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="assets/img/single3.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="assets/img/single4.jpg" alt=""></div>
+                          <div class="swiper-slide"><img src="assets/img/single5.jpg" alt=""></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-4">
                     <p>오아시 호텔 객실 중 가장 기본적인 객실로<br>1인, 커플, 친구 여행으로 적합한 크기입니다.</p>
                     <p>객실크기　80(m2)<br>
                     이용기준인원　2인</p>
@@ -108,4 +106,3 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/rooms.js"></script>
   <script src="assets/js/wow.min.js"></script>
-  <script>new WOW().init();</script>

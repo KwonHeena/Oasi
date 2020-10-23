@@ -86,3 +86,21 @@
     
     setInterval(NextSlide, 3000); //자동 슬라이드 설정
   });
+
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    autoplay : { // 자동 재생
+			delay : 2000, // 딜레이 0
+		},
+		speed : 1000, // 슬라이드 속도 2초
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
