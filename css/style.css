@@ -498,7 +498,57 @@ body{
   }
 
 }
-/* Gallery end
+/* Gallery end */
+
+#room-all{
+  width: 100%;
+  background: #fff;
+  padding: 5% 0 5% 0;
+  overflow-x: hidden;
+}
+#room-all .room-name{
+  font-size: 35px;
+  color: #dbb99e;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
+  padding: 0 0 3% 15%;
+}
+#room-all .row{
+  margin-left: 23%;
+  width: 100%;
+}
+#room-all img{
+  width: 100%;
+  height: 250px;
+}
+#room-all .col-sm-2{
+  padding: 0 0 10px 0;
+  border: 1px solid #ccc;
+  margin: 0 15px;
+}
+#room-all p{
+  color: #181818;
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 15px;
+}
+#room-all button{
+  padding: 3px 6px;
+  border-radius: 10px;
+  border: 1px solid #e9af85;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;  
+  font-size: 18px;
+  font-weight: 500;
+}
+#room-all button:hover{
+  background: #e9af85;
+  color: #fff;
+  transition: .5s;
+}
+
+
 
 /* Review */
 #review{
@@ -687,14 +737,14 @@ footer a:hover{
 }
 
 
-/* ROOMS */
-#rooms{
+/* Double */
+#double{
   width: 100%;
   height: auto;
   font-weight: 600;
   padding-bottom: 10%;
 }
-#rooms h1{
+#double h1{
   height: 200px;
   line-height: 250px;
   font-size: 45px;
@@ -702,24 +752,24 @@ footer a:hover{
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bold;
 }
-#rooms .slider {
+#double .slider {
   list-style:none;
   height:400px;
   overflow:hidden;
 }
-#rooms .slider:after {
+#double .slider:after {
   content:'';
   display:block;
   clear:both;
 }
-#rooms .slider li {
+#double .slider li {
   position:absolute;
   top:0;
   left:0;
   height:500px;
   opacity:0;
 }
-#rooms .slider li div{
+#double .slider li div{
   width: 600px;
   height: 400px;
   background-size:cover;
@@ -741,58 +791,4 @@ footer a:hover{
   background: #e9af85;
   color: #fff;
   transition: .5s;
-}
-#rooms button a{
-  color: inherit;
-  text-decoration: none;
-}
-
-#rooms .slider2 {
-  list-style:none;
-  height:400px;
-  overflow:hidden;
-  position: relative;
-  left: 40px;
-}
-#rooms .slider2:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-#rooms .slider2 li {
-  position:absolute;
-  top:0;
-  left:0;
-  height:500px;
-  opacity:0;
-}
-#rooms .slider2 li div{
-  width: 600px;
-  height: 400px;
-  background-size:cover;
-  position:relative;
-}
-
-#rooms .slider3 {
-  list-style:none;
-  height:400px;
-  overflow:hidden;
-}
-#rooms .slider3:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-#rooms .slider3 li {
-  position:absolute;
-  top:0;
-  left:0;
-  height:500px;
-  opacity:0;
-}
-#rooms .slider3 li div{
-  width: 600px;
-  height: 400px;
-  background-size:cover;
-  position:relative;
 }
