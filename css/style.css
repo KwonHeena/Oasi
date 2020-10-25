@@ -388,6 +388,12 @@ body{
     margin: 0 auto;
   }
 }
+@media(max-width: 415px){
+  .booking-form {
+    width: 90%;
+  }
+}
+
 
 
 /* section02 */
@@ -472,7 +478,6 @@ body{
     padding-bottom: 20%;
   }
   #gallery>p{
-    font-size: 55px;
     padding: 8% 0 5% 5%;
   }
   #gallery .slider{
@@ -482,9 +487,6 @@ body{
     width: 100%;
   }
   @media(max-width:500px){
-    #gallery>p{
-      font-size: 45px;
-    }
     #gallery{
       padding-bottom: 20%;
       padding-top: 5%;
@@ -563,7 +565,6 @@ body{
     margin: 20px 0;
   }
   #room-all .room-name{
-    font-size: 55px;
     padding: 0 0 0 5%;
   }
 }
@@ -653,7 +654,6 @@ body{
 
 @media (max-width: 768px) {
   .review{
-    font-size: 55px;
     padding: 8% 0 0 5%;
   }
   #review{
@@ -681,11 +681,6 @@ body{
     width: 300px;
     height: 280px;
     margin: 0 auto;
-  }
-  .review{
-    font-size: 45px;
-    padding-left: 25px;
-    padding-top: 70px;
   }
 }
 @media (max-width: 415px){
@@ -769,28 +764,8 @@ footer a:hover{
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bold;
 }
-#double .slider {
-  list-style:none;
-  height:400px;
-  overflow:hidden;
-}
-#double .slider:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-#double .slider li {
-  position:absolute;
-  top:0;
-  left:0;
-  height:500px;
-  opacity:0;
-}
-#double .slider li div{
-  width: 600px;
-  height: 400px;
-  background-size:cover;
-  position:relative;
+.swiper-container .swiper-wrapper div img{
+  width: 100%;
 }
 #rooms button{
   border: none;
@@ -809,18 +784,42 @@ footer a:hover{
   color: #fff;
   transition: .5s;
 }
-
 .swiper-container {
-  width: 100%;
-  height: 450px;
+  width: 80%;
+  height: auto;
 }
 .swiper-button-next:after, .swiper-button-prev:after {
   font-size: 24px;
   color: #fff;
 }
-
+#double p{
+  font-size: 25px;
+  padding-bottom: 3%;
+}
 :root {
   --swiper-theme-color: #fff;
+}
+.bed-time p{
+  padding-top: 7%;
+  color: #e9af85;
+  font-size: 30px;
+}
+.bed-time table{
+  width: 80%;
+  margin: 0 auto;
+}
+.bed-time tr{
+  border: 1px solid #333;
+}
+.bed-time th{
+  width: 320px;
+  height: 50px;
+  border-right: 1px solid #333;
+  background: #ccc;
+}
+.bed-time td{
+  height: 70px;
+  border-right: 1px solid #333;
 }
 
 @media(max-width: 500px){
@@ -925,4 +924,11 @@ footer a:hover{
     padding: 0;
     padding-bottom: 30px;
 }
+}
+
+/* map */
+#map{
+  width: 100%;
+  height: 500px;
+  background: steelblue;
 }

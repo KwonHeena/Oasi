@@ -134,10 +134,16 @@
     dots: true,
     loop: true,
     responsive: {
+      300: {
+        items: 1
+      },
       400: {
         items: 1
       },
       500: {
+        items: 1
+      },
+      600: {
         items: 1
       },
       700: {
