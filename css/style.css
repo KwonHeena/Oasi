@@ -388,6 +388,12 @@ body{
     margin: 0 auto;
   }
 }
+@media(max-width: 415px){
+  .booking-form {
+    width: 90%;
+  }
+}
+
 
 
 /* section02 */
@@ -472,7 +478,6 @@ body{
     padding-bottom: 20%;
   }
   #gallery>p{
-    font-size: 55px;
     padding: 8% 0 5% 5%;
   }
   #gallery .slider{
@@ -482,9 +487,6 @@ body{
     width: 100%;
   }
   @media(max-width:500px){
-    #gallery>p{
-      font-size: 45px;
-    }
     #gallery{
       padding-bottom: 20%;
       padding-top: 5%;
@@ -563,7 +565,6 @@ body{
     margin: 20px 0;
   }
   #room-all .room-name{
-    font-size: 55px;
     padding: 0 0 0 5%;
   }
 }
@@ -653,7 +654,6 @@ body{
 
 @media (max-width: 768px) {
   .review{
-    font-size: 55px;
     padding: 8% 0 0 5%;
   }
   #review{
@@ -681,11 +681,6 @@ body{
     width: 300px;
     height: 280px;
     margin: 0 auto;
-  }
-  .review{
-    font-size: 45px;
-    padding-left: 25px;
-    padding-top: 70px;
   }
 }
 @media (max-width: 415px){
@@ -756,173 +751,200 @@ footer a:hover{
 
 /* Double */
 #double{
+    width: 100%;
+    height: auto;
+    background: #fffaf6;
+    padding-bottom: 7%;
+  }
+  #double h1{
+    height: 200px;
+    line-height: 250px;
+    font-size: 45px;
+    color: #dbb99e;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+  }
+  .room-text{
+    display: block;
+  }
+  .room-text p{
+    font-weight: normal;
+    font-size: 30px;
+    color: #333;
+  }
+  .swiper-container .swiper-wrapper div img{
+    width: 100%;
+  }
+  #rooms button{
+    border: none;
+    width: 110px;
+    height: 40px;
+    border: 1px solid #e9af85;
+    border-radius: 5px;
+    background: #fff;
+    transition: 0.5s;  
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 24px;
+    color: #fff;
+  }
+  #double>p{
+    font-size: 25px;
+    padding-bottom: 3%;
+  }
+  :root {
+    --swiper-theme-color: #fff;
+  }
+  #double ul{
+    width: 98%; 
+    margin: 0 auto;
+    border:3px solid #ccc; 
+    border-radius: 5px; 
+    margin:50px 0 0 1%; 
+    list-style:none;
+  }
+  .arcodion{
+    line-height: 32px;
+    margin-left: 25%;
+  }
+  #double ul li{
+    border-top:1px dotted #ccc; 
+    margin-bottom:10px;
+    margin: 0 0 0;
+    font-weight: 700;
+  }
+  #double ul li:first-child{
+    border:0 none;
+  }
+  #double ul li a{
+    height: 30px; 
+    line-height:30px; 
+    display:block; 
+    text-decoration:none; 
+    color:#000;
+  }
+  #double ul li p{
+    color:#333;
+    font-size: 16px;
+    padding: 20px 0 10px 0;
+  }
+
+  #double .span{
+    font-size: 25px;
+    padding: 30px 0;
+  }
+  
+  @media(max-width:768px){
+    .table .arcodion{
+      margin-left: 3%;
+      padding: 0 10px;
+      font-size: 10px;
+    }
+  } 
+  @media(max-width:500px){
+    #double .container .row .col-sm-12{
+      padding: 0 0;
+    }
+    #double ul{
+      width: 95%; 
+      margin: 0 auto;
+      border:3px solid #ccc; 
+      border-radius:8px; 
+      margin:50px 0 0 3%; 
+      list-style:none;
+    }
+    #double ul li .arcodion{
+      font-size: 14px;
+      padding: 0 10px;
+    }
+    #double .span{
+      font-size: 20px;
+    }
+  }
+  
+  #delux>h1{
+    height: 200px;
+    line-height: 250px;
+    font-size: 45px;
+    color: #dbb99e;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+  }
+  #delux .slider {
+    list-style:none;
+    height:400px;
+    overflow:hidden;
+  }
+  #delux .slider:after {
+    content:'';
+    display:block;
+    clear:both;
+  }
+  #delux .slider li {
+    position:absolute;
+    top:0;
+    left:0;
+    height:500px;
+    opacity:0;
+  }
+  #delux .slider li div{
+    width: 600px;
+    height: 400px;
+    background-size:cover;
+    position:relative;
+  }
+  
+  
+  
+  #luxury{
+    width: 100%;
+    height: auto;
+    font-weight: 600;
+    padding-bottom: 10%;
+  }
+  #luxury h1{
+    height: 200px;
+    line-height: 250px;
+    font-size: 45px;
+    color: #dbb99e;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+  }
+  #luxury .slider {
+    list-style:none;
+    height:400px;
+    overflow:hidden;
+  }
+  #luxury .slider:after {
+    content:'';
+    display:block;
+    clear:both;
+  }
+  #luxury .slider li {
+    position:absolute;
+    top:0;
+    left:0;
+    height:500px;
+    opacity:0;
+  }
+  #luxury .slider li div{
+    width: 600px;
+    height: 400px;
+    background-size:cover;
+    position:relative;
+  }
+  
+  
+/* map */
+#map{
   width: 100%;
-  height: auto;
-  font-weight: 600;
-  padding-bottom: 10%;
-}
-#double h1{
-  height: 200px;
-  line-height: 250px;
-  font-size: 45px;
-  color: #dbb99e;
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: bold;
-}
-#double .slider {
-  list-style:none;
-  height:400px;
-  overflow:hidden;
-}
-#double .slider:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-#double .slider li {
-  position:absolute;
-  top:0;
-  left:0;
-  height:500px;
-  opacity:0;
-}
-#double .slider li div{
-  width: 600px;
-  height: 400px;
-  background-size:cover;
-  position:relative;
-}
-#rooms button{
-  border: none;
-  width: 110px;
-  height: 40px;
-  border: 1px solid #e9af85;
-  border-radius: 5px;
-  background: #fff;
-  transition: 0.5s;  
-  font-size: 18px;
-  font-weight: 500;
-  margin-top: 10px;
-}
-#rooms button:hover{
-  background: #e9af85;
-  color: #fff;
-  transition: .5s;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 450px;
-}
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 24px;
-  color: #fff;
-}
-
-:root {
-  --swiper-theme-color: #fff;
-}
-
-@media(max-width: 500px){
-  #double>.container .row .col-sm-8{
-    padding-right: 0;
-    padding-left: 0;
-    padding: 0;
-    padding-bottom: 30px;
-}
-}
-#delux{
-  width: 100%;
-  height: auto;
-  font-weight: 600;
-  padding-bottom: 10%;
-}
-#delux h1{
-  height: 200px;
-  line-height: 250px;
-  font-size: 45px;
-  color: #dbb99e;
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: bold;
-}
-#delux .slider {
-  list-style:none;
-  height:400px;
-  overflow:hidden;
-}
-#delux .slider:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-#delux .slider li {
-  position:absolute;
-  top:0;
-  left:0;
-  height:500px;
-  opacity:0;
-}
-#delux .slider li div{
-  width: 600px;
-  height: 400px;
-  background-size:cover;
-  position:relative;
-}
-
-
-@media(max-width: 500px){
-  #delux>.container .row .col-sm-8{
-    padding-right: 0;
-    padding-left: 0;
-    padding: 0;
-    padding-bottom: 30px;
-}
-}
-
-#luxury{
-  width: 100%;
-  height: auto;
-  font-weight: 600;
-  padding-bottom: 10%;
-}
-#luxury h1{
-  height: 200px;
-  line-height: 250px;
-  font-size: 45px;
-  color: #dbb99e;
-  font-family: 'Nanum Myeongjo', serif;
-  font-weight: bold;
-}
-#luxury .slider {
-  list-style:none;
-  height:400px;
-  overflow:hidden;
-}
-#luxury .slider:after {
-  content:'';
-  display:block;
-  clear:both;
-}
-#luxury .slider li {
-  position:absolute;
-  top:0;
-  left:0;
-  height:500px;
-  opacity:0;
-}
-#luxury .slider li div{
-  width: 600px;
-  height: 400px;
-  background-size:cover;
-  position:relative;
-}
-
-
-@media(max-width: 500px){
-  #luxury>.container .row .col-sm-8{
-    padding-right: 0;
-    padding-left: 0;
-    padding: 0;
-    padding-bottom: 30px;
-}
+  height: 500px;
+  background: steelblue;
 }
