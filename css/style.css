@@ -504,7 +504,7 @@ body{
 
 #room-all{
   width: 100%;
-  background: #fffaf7;
+  background: #f6f6f6;
   padding: 5% 0 5% 0;
   overflow-x: hidden;
 }
@@ -545,11 +545,17 @@ body{
   font-size: 18px;
   font-weight: 500;
 }
-#room-all button:hover{
+#room-all .col-sm:hover button{
+  cursor: pointer;
   background: #e9af85;
   border: none;
   color: #fff;
   transition: .5s;
+}
+#room-all .col-sm:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+  overflow: hidden;
 }
 @media(max-width:768px){
   #room-all{
@@ -869,77 +875,9 @@ footer a:hover{
     }
   }
   
-  #delux>h1{
-    height: 200px;
-    line-height: 250px;
-    font-size: 45px;
-    color: #dbb99e;
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: bold;
-  }
-  #delux .slider {
-    list-style:none;
-    height:400px;
-    overflow:hidden;
-  }
-  #delux .slider:after {
-    content:'';
-    display:block;
-    clear:both;
-  }
-  #delux .slider li {
-    position:absolute;
-    top:0;
-    left:0;
-    height:500px;
-    opacity:0;
-  }
-  #delux .slider li div{
-    width: 600px;
-    height: 400px;
-    background-size:cover;
-    position:relative;
-  }
   
   
   
-  #luxury{
-    width: 100%;
-    height: auto;
-    font-weight: 600;
-    padding-bottom: 10%;
-  }
-  #luxury h1{
-    height: 200px;
-    line-height: 250px;
-    font-size: 45px;
-    color: #dbb99e;
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: bold;
-  }
-  #luxury .slider {
-    list-style:none;
-    height:400px;
-    overflow:hidden;
-  }
-  #luxury .slider:after {
-    content:'';
-    display:block;
-    clear:both;
-  }
-  #luxury .slider li {
-    position:absolute;
-    top:0;
-    left:0;
-    height:500px;
-    opacity:0;
-  }
-  #luxury .slider li div{
-    width: 600px;
-    height: 400px;
-    background-size:cover;
-    position:relative;
-  }
   
   
 /* map */

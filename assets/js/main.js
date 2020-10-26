@@ -146,18 +146,36 @@
     }
   });
 
-// Rooms 아코디언
-$(document).ready(function(){
-  $(".arcodion").hide();
-  // $("ul > li:first-child a").next().show();
-  $("ul li a").click(function(){
-    $(this).next().slideToggle(300);
-    // $(this).next().slideDown(300);
-    $("ul li a").not(this).next().slideUp(300);
-    return false;
+  // Rooms 아코디언
+  $(document).ready(function(){
+    $(".arcodion").hide();
+    $(".table ul > li:first-child a").next().show();
+    $(".table ul li a").click(function(){
+      $(this).next().slideToggle(300);
+      // $(this).next().slideDown(300);
+      $(".table ul li a").not(this).next().slideUp(300);
+      return false;
+    });
+    $(".table ul li a").eq(0).trigger("click");
   });
-  $("ul li a").eq(0).trigger("click");
-});
   
+// ROOM 슬라이드
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+  autoplay : { // 자동 재생
+    delay : 2000, // 딜레이 0
+  },
+  speed : 1000, // 슬라이드 속도 2초
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 })(jQuery);
 
