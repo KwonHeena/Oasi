@@ -146,19 +146,7 @@
     }
   });
 
-  // Rooms 아코디언
-  $(document).ready(function(){
-    $(".arcodion").hide();
-    $(".table ul > li:first-child a").next().show();
-    $(".table ul li a").click(function(){
-      $(this).next().slideToggle(300);
-      // $(this).next().slideDown(300);
-      $(".table ul li a").not(this).next().slideUp(300);
-      return false;
-    });
-    $(".table ul li a").eq(0).trigger("click");
-  });
-  
+
 // ROOM 슬라이드
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
@@ -177,5 +165,21 @@ var swiper = new Swiper('.swiper-container', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+// Map 탭
+$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
 })(jQuery);
 

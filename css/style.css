@@ -250,16 +250,13 @@ body{
   display: none;
   transition: ease-in-out 0.2s;
 }
-
 .mobile-nav-active {
   overflow: hidden;
 }
-
 .mobile-nav-active .mobile-nav {
   opacity: 1;
   visibility: visible;
 }
-
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
@@ -271,7 +268,6 @@ body{
   width: 100%;
   overflow-x: hidden;
 }
-
 /* navi end */
 
 .section .section-center {
@@ -294,7 +290,6 @@ body{
 	position: relative;
 	margin-bottom: 30px;
 }
-
 .booking-form .form-control {
 	background-color: #ebecee;
   border-bottom: 1px solid #c2c2c2;
@@ -308,13 +303,11 @@ body{
 	box-shadow: none;
 	font-size: 14px;
 }
-
 .booking-form select.form-control {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
 }
-
 .booking-form select.form-control+.select-arrow {
 	position: absolute;
 	right: 0px;
@@ -327,21 +320,18 @@ body{
 	color: rgba(62, 72, 92, 0.3);
 	font-size: 14px;
 }
-
 .booking-form select.form-control+.select-arrow:after {
 	content: '\279C';
 	display: block;
 	-webkit-transform: rotate(90deg);
 	transform: rotate(90deg);
 }
-
 .booking-form .form-label {
 	display: inline-block;
 	color: #3e485c;
 	margin-bottom: 6px;
 	margin-left: 7px;
 }
-
 .booking-form .submit-btn {
   width: 320px;
 	display: inline-block;
@@ -355,7 +345,6 @@ body{
 	-webkit-transition: 0.2s all;
 	transition: 0.2s all;
 }
-
 .booking-form .submit-btn:hover,
 .booking-form .submit-btn:focus {
 	opacity: 0.9;
@@ -393,8 +382,6 @@ body{
     width: 90%;
   }
 }
-
-
 
 /* section02 */
 #section02{
@@ -504,7 +491,7 @@ body{
 
 #room-all{
   width: 100%;
-  background: #f6f6f6;
+  background: #fffaf5;
   padding: 5% 0 5% 0;
   overflow-x: hidden;
 }
@@ -519,15 +506,20 @@ body{
   margin-left: 0.5%;
   width: 100%;
 }
+#room-all .hidden{
+  width: 33%;
+  overflow: hidden;
+}
 #room-all img{
   width: 100%;
   height: 250px;
 }
 #room-all .col-sm{
   padding: 0 0 10px 0;
-  border: 1px solid #f6f6f6;
+  border: 1px solid #fffbf7;
   margin: 0 15px;
   background: #fff;
+  transition: 0.5
 }
 #room-all p{
   color: #181818;
@@ -558,6 +550,11 @@ body{
   overflow: hidden;
 }
 @media(max-width:768px){
+  #room-all .hidden{
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
   #room-all{
     padding: 10% 0 10% 0;
   }
@@ -574,6 +571,17 @@ body{
     padding: 0 0 0 5%;
   }
 }
+@media (max-width:500px){
+  #room-all .room-name{
+    padding: 0 0 5% 5%;
+  }
+  #room-all .col-sm{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
 /* Review */
 #review{
   width: 100%;
@@ -650,14 +658,11 @@ body{
   margin-top: 5px;
   text-align: center;
 }
-
 .star{
   color: #ed9318;
   display: block;
   padding: 5px 0 10px 0;
 }
-
-
 @media (max-width: 768px) {
   .review{
     padding: 8% 0 0 5%;
@@ -671,8 +676,9 @@ body{
     padding-top: 27%;
     padding-left: 15px;
     padding-right: 15px;
-    width: 240px;
+    width: 290px;
     height: 300px;
+    margin: 0 auto;
   }
   .testimonials .testimonial-item .testimonial-img {
     width: 120px;
@@ -754,7 +760,6 @@ footer a:hover{
   }
 }
 
-
 /* Double */
 #double{
     width: 100%;
@@ -762,13 +767,12 @@ footer a:hover{
     background: #fffaf6;
     padding-bottom: 7%;
   }
-  #double h1{
-    height: 200px;
-    line-height: 250px;
-    font-size: 45px;
+#double h1{
+    font-size: 35px;
     color: #dbb99e;
     font-family: 'Nanum Myeongjo', serif;
     font-weight: bold;
+    padding: 8% 0 1% 0%;
   }
   .room-text{
     display: block;
@@ -801,88 +805,193 @@ footer a:hover{
     font-size: 24px;
     color: #fff;
   }
-  #double>p{
-    font-size: 25px;
+  #double p{
+    font-weight: 600;
     padding-bottom: 3%;
+    line-height: 35px;
   }
   :root {
     --swiper-theme-color: #fff;
   }
-  #double ul{
-    width: 98%; 
+  table{
+    width: 100%;
     margin: 0 auto;
-    border:3px solid #ccc; 
-    border-radius: 5px; 
-    margin:50px 0 0 1%; 
-    list-style:none;
+    font-weight: 600;
   }
-  .arcodion{
-    line-height: 32px;
-    margin-left: 25%;
+.span{
+  display: block;
+  font-size: 25px;
+  padding: 3% 0;
+}
+.bar{
+  width: 90px;
+  height: 1px;
+  background: #e9af85;
+  position: relative;
+  top: -15px;
+}
+.room-inner{
+  width: 97.5%;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
+  padding-bottom: 5%;
+}
+.room-text{
+  font-size: 25px !important;
+  font-weight: bold;
+  color: #e9af85;
+  padding-top: 6%;
+}
+#double .inform{
+  padding-left: 20%;
+}
+i{
+  font-size: 35px;
+  padding: 0 5%;
+}
+i>.icon-text{
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Chosunilbo_myungjo';
+  padding-top: 20%;
+}
+#double .submit-btn {
+  width: 130px;
+	display: inline-block;
+	color: #fff;
+  background-color: #e3985b;
+  font-size: 18px;
+  letter-spacing: 1px;
+	padding: 10px 0;
+	border-radius: 4px;
+	border: none;
+	-webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  margin-top: 3%;
+}
+#double .submit-btn:hover,
+#double .submit-btn:focus {
+	opacity: 0.9;
+}
+@media (max-width:768px){
+  .room-text{
+    font-size: 23px !important;
   }
-  #double ul li{
-    border-top:1px dotted #ccc; 
-    margin-bottom:10px;
-    margin: 0 0 0;
-    font-weight: 700;
+  #double .inform{
+    padding-left: 5%;
   }
-  #double ul li:first-child{
-    border:0 none;
+}
+@media (max-width:500px){
+  #double .inform{
+    text-align: center !important;
   }
-  #double ul li a{
-    height: 30px; 
-    line-height:30px; 
-    display:block; 
-    text-decoration:none; 
-    color:#000;
+  .span{
+    font-size: 18px;
   }
-  #double ul li p{
-    color:#333;
-    font-size: 16px;
-    padding: 20px 0 10px 0;
-  }
+}
+/* ROOM END */
 
-  #double .span{
-    font-size: 25px;
-    padding: 30px 0;
-  }
-  
-  @media(max-width:768px){
-    .table .arcodion{
-      margin-left: 3%;
-      padding: 0 10px;
-      font-size: 10px;
-    }
-  } 
-  @media(max-width:500px){
-    #double .container .row .col-sm-12{
-      padding: 0 0;
-    }
-    #double ul{
-      width: 95%; 
-      margin: 0 auto;
-      border:3px solid #ccc; 
-      border-radius:8px; 
-      margin:50px 0 0 3%; 
-      list-style:none;
-    }
-    #double ul li .arcodion{
-      font-size: 14px;
-      padding: 0 10px;
-    }
-    #double .span{
-      font-size: 20px;
-    }
-  }
-  
-  
-  
-  
-  
-  
-/* map */
 #map{
   width: 100%;
-  height: 500px;
-  background: steelblue;
+  height: auto;
+  background: #fffaf6;
+  font-weight: 600;
+  padding-bottom: 7%;
+  font-size: 16px;
+}
+.bar1{
+    width: 90px;
+    margin: 0 auto;
+    height: 1px;
+    background: #e9af85;
+    position: relative;
+    margin-bottom: 5%;
+}
+#map h1{
+  font-size: 35px;
+  color: #dbb99e;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
+  padding: 0 0 5% 0%; 
+}
+.subway>p{
+  font-weight: normal;
+  font-size: 30px;
+  color: #e9af85;
+}
+.map{
+  padding-bottom: 1%;
+}
+#map h1{
+  font-size: 35px;
+  color: #dbb99e;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
+  padding: 10% 0 3% 0%;
+}
+#map button {
+  background:none;
+  border:0;
+  outline:0;
+  cursor:pointer;
+}
+.map iframe{
+  width: 80%;
+  height: 450px;
+}
+.map_box{
+  width: 80%;
+  margin: 0 auto;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.7);
+}
+.subway{
+  width: 100%;
+  height: 50px;
+  background: #fbede1;
+  line-height: 30px;
+}
+.gimpo{
+  display: inline;
+  background: #d6ac22;
+  color: #fff;
+  font-size: 16px;
+  padding: 6px 8px;
+  font-weight: normal;
+  border-radius: 20px;
+}
+.map_box2{
+  padding-top: 2%;
+  height: 150px !important;
+}
+.map_inner{
+  width: 78%;
+  margin: 0 auto;
+  height: auto;
+  background: #fff;
+  padding-bottom: 2%;
+}
+
+@media (max-width:768px){
+  #map h1{
+    padding: 13% 0 6% 0%;
+  }
+  .map img{
+    width: 100%;
+  }
+  .map_box{
+    width: 100%;
+    margin: 0 auto;
+    height: 220px;
+    background: rgba(255, 255, 255, 0.7);
+  }
+}
+
+/* Facilites */
+#Facilites h1{
+  font-size: 35px;
+  color: #dbb99e;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
+  padding: 7% 0 5% 0%; 
 }
