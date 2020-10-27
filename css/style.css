@@ -882,7 +882,7 @@ i>.icon-text{
     font-size: 23px !important;
   }
   #double .inform{
-    padding-left: 5%;
+    padding-left: 0%;
   }
 }
 @media (max-width:500px){
@@ -891,6 +891,11 @@ i>.icon-text{
   }
   .span{
     font-size: 18px;
+  }
+}
+@media (max-width: 414px){
+  #double .inform{
+    padding-left: 0%;
   }
 }
 /* ROOM END */
