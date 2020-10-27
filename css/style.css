@@ -581,7 +581,11 @@ body{
     margin-bottom: 20px;
   }
 }
-
+@media (max-width: 414px){
+  #room-all .col-sm{
+    width: 100%;
+  }
+}
 /* Review */
 #review{
   width: 100%;
