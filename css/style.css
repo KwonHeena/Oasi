@@ -519,7 +519,7 @@ body{
   border: 1px solid #fffbf7;
   margin: 0 15px;
   background: #fff;
-  transition: 0.5
+  transition: .5s
 }
 #room-all p{
   color: #181818;
