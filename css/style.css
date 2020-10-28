@@ -910,6 +910,7 @@ i>.icon-text{
   height: auto;
   background: #fdf5f2;
   padding-bottom: 5%;
+  overflow: hidden;
 }
 #Facilites h1{
   font-size: 35px;
