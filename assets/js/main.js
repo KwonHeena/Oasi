@@ -131,7 +131,7 @@
     dots: true,
     loop: true,
     responsive: {
-      400: {
+      300: {
         items: 1
       },
       500: {
@@ -179,7 +179,10 @@ $(document).ready(function(){
 		$(this).addClass('current');
 		$("#"+tab_id).addClass('current');
 	})
-
 })
+
+// aos
+  AOS.init();
+
 })(jQuery);
 

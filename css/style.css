@@ -18,7 +18,6 @@
     margin: 0 ;
     padding: 0;
 }
-
 body{
 	font-family: 'Chosunilbo_myungjo' !important;
 	font-weight: 400;
@@ -94,18 +93,15 @@ body{
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
-
 .nav-menu .drop-down:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
-
 .nav-menu .drop-down li {
   min-width: 180px;
   position: relative;
 }
-
 .nav-menu .drop-down ul a {
   padding: 10px 20px;
   font-size: 14px;
@@ -113,39 +109,32 @@ body{
   text-transform: none;
   color: #565656;
 }
-
 .nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
   color: #edbe9d;
 }
-
 .nav-menu .drop-down > a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
 }
-
 .nav-menu .drop-down .drop-down ul {
   top: 0;
   left: calc(100% - 30px);
 }
-
 .nav-menu .drop-down .drop-down:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
 }
-
 .nav-menu .drop-down .drop-down > a {
   padding-right: 35px;
 }
-
 .nav-menu .drop-down .drop-down > a:after {
   content: "\eaa0";
   font-family: IcoFont;
   position: absolute;
   right: 15px;
 }
-
 @media (max-width: 1366px) {
   .nav-menu .drop-down .drop-down ul {
     left: -90%;
@@ -157,7 +146,6 @@ body{
     content: "\ea9d";
   }
 }
-
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -173,11 +161,9 @@ body{
   cursor: pointer;
   text-align: right;
 }
-
 .mobile-nav-toggle i {
   color: #7e7e7e;
 }
-
 .mobile-nav {
   width: 90%;
   position: fixed;
@@ -192,13 +178,11 @@ body{
   border-radius: 10px;
   padding: 10px 0px;
 }
-
 .mobile-nav * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .mobile-nav a {
   display: block;
   position: relative;
@@ -207,12 +191,10 @@ body{
   font-weight: 500;
   outline: none;
 }
-
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
   color: #b7b7b7;
   text-decoration: none;
 }
-
 .mobile-nav .drop-down > a:after {
   content: "\ea99";
   font-family: IcoFont;
@@ -220,24 +202,19 @@ body{
   position: absolute;
   right: 15px;
 }
-
 .mobile-nav .active.drop-down > a:after {
   content: "\eaa1";
 }
-
 .mobile-nav .drop-down > a {
   padding-right: 35px;
 }
-
 .mobile-nav .drop-down ul {
   display: none;
   overflow: hidden;
 }
-
 .mobile-nav .drop-down li {
   padding-left: 20px;
 }
-
 .mobile-nav-overly {
   width: 100%;
   height: 100%;
@@ -260,6 +237,8 @@ body{
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
+/* navi end */
+
 #gtco-header {
   background-image: url(../assets/img/main-bg.jpg);
   background-size: cover;
@@ -268,8 +247,6 @@ body{
   width: 100%;
   overflow-x: hidden;
 }
-/* navi end */
-
 .section .section-center {
 	position: absolute;
 	top: 50%;
@@ -877,6 +854,29 @@ i>.icon-text{
 #double .submit-btn:focus {
 	opacity: 0.9;
 }
+#double .images{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+}
+#double .images p{
+  padding-top: 3%;
+}
+#double .images .col-sm-6{
+  overflow: hidden;
+}
+#double .col-sm-6 img{
+  width: 100%;
+}
+#double .col-sm-6 img{
+  transition: all .5s;
+}
+#double .col-sm-6 img:hover {
+  transform: scale(1.03);
+  transition: all .5s;
+}
 @media (max-width:768px){
   .room-text{
     font-size: 23px !important;
@@ -892,6 +892,9 @@ i>.icon-text{
   .span{
     font-size: 18px;
   }
+  #double .images{
+    flex-direction: column;
+  }
 }
 @media (max-width: 414px){
   #double .inform{
@@ -900,6 +903,157 @@ i>.icon-text{
 }
 /* ROOM END */
 
+
+/* Facilites */
+#Facilites{
+  width: 100%;
+  height: auto;
+  background: #fdf5f2;
+  padding-bottom: 5%;
+}
+#Facilites h1{
+  font-size: 35px;
+  color: #dbb99e;
+  font-family: 'Nanum Myeongjo', serif;
+  font-weight: bold;
+  padding: 7% 0 5% 0%; 
+}
+.dining-area .single-dining-area {
+  position: relative;
+  padding: 150px 0;
+}
+.dining-area .single-dining-area.left-img {
+  position: relative;
+}
+.dining-area .single-dining-area.left-img::before {
+    position: absolute;
+    left: 0;
+    content: "";
+    top: 0;
+    bottom: 0;
+    background-image: url(../assets/img/swimming-pool.jpg);
+    width: 50%;
+    height: 550px;
+    border-radius: 5px;
+    margin-left :10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.dining-area .single-dining-area.right-img {
+    position: relative;
+}
+.dining-area .single-dining-area.right-img::before {
+    position: absolute;
+    right: 0;
+    content: "";
+    top: 0;
+    bottom: 0;
+    background-image: url(../assets/img/restaurant.jpg);
+    width: 50%;
+    margin-right:10%;
+    height: 530px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dining-area .dining-caption1 {
+  background: rgba(252, 252, 252, 0.95);
+  padding: 8% 10% 2% 10%;
+  border-radius: 5px;
+  position: relative;
+  bottom: 15%;
+  margin-left: 20%;
+}
+.dining-area .dining-caption1 span {
+  color: #ee964e;
+  margin-bottom: 35px;
+  display: block;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.dining-area .dining-caption1 h3 {
+  font-weight: 600;
+  color: #282828;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.dining-area .dining-caption1 p {
+  margin-bottom: 56px;
+  line-height: 1.7;
+  color: #000;
+  font-size: 18px;
+}
+.dining-area .dining-caption2 {
+  background: rgba(252, 252, 252, 0.95);
+  padding: 8% 10% 2% 10%;
+  border-radius: 5px;
+  position: relative;
+  bottom: 15%;
+  margin-right: 20%;
+}
+.dining-area .dining-caption2 span {
+  color: #ee964e;
+  margin-bottom: 35px;
+  display: block;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.dining-area .dining-caption2 h3 {
+  font-weight: 600;
+  color: #282828;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.dining-area .dining-caption2 p {
+  margin-bottom: 56px;
+  line-height: 1.7;
+  color: #000;
+  font-size: 18px;
+}
+.dining-area .single-dining-area.end-img::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  top: 0;
+  bottom: 0;
+  background-image: url(../assets/img/wedding.jpg);
+  width: 50%;
+  height: 550px;
+  border-radius: 5px;
+  margin-left :10%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.dining-area .dining-caption3 {
+  background: rgba(252, 252, 252, 0.95);
+  padding: 8% 10% 2% 10%;
+  border-radius: 5px;
+  position: relative;
+  bottom: 15%;
+  margin-left: 20%;
+}
+.dining-area .dining-caption3 span {
+  color: #ee964e;
+  margin-bottom: 35px;
+  display: block;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.dining-area .dining-caption3 h3 {
+  font-weight: 600;
+  color: #282828;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+.dining-area .dining-caption3 p {
+  margin-bottom: 56px;
+  line-height: 1.7;
+  color: #000;
+  font-size: 18px;
+}
+
+/* Facilites end */
+/* map */
 #map{
   width: 100%;
   height: auto;
@@ -996,11 +1150,11 @@ i>.icon-text{
   }
 }
 
-/* Facilites */
-#Facilites h1{
+/* reservation */
+#Reservation h1{
   font-size: 35px;
   color: #dbb99e;
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bold;
-  padding: 7% 0 5% 0%; 
+  padding: 10% 0 3% 0%;
 }
