@@ -110,20 +110,6 @@
     zIndex: '50'
   });
 
-  // Back to top button
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $('.back-to-top').fadeIn('slow');
-    } else {
-      $('.back-to-top').fadeOut('slow');
-    }
-  });
-  $('.back-to-top').click(function() {
-    $('html, body').animate({
-      scrollTop: 0
-    }, 1500, 'easeInOutExpo');
-    return false;
-  });
 
   // review
   $(".testimonials-carousel").owlCarousel({
@@ -184,5 +170,17 @@ $(document).ready(function(){
 // aos
   AOS.init();
 
+  var dateAndTime = function() {
+    $('#m_date').datepicker({
+      'format': 'm/d/yyyy',
+      'autoclose': true
+    });
+    $('#checkin_date, #checkout_date').datepicker({
+      'format': 'd MM, yyyy',
+      'autoclose': true
+    });
+    $('#m_time').timepicker();
+  };
+  dateAndTime();
 })(jQuery);
 

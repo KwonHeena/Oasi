@@ -1052,15 +1052,7 @@ i>.icon-text{
   color: #000;
   font-size: 18px;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .dining-area .dining-caption {
-    padding: 60px 69px 68px 61px; } }
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .dining-area .dining-caption {
-    padding: 57px 59px 65px 79px; } }
-@media (max-width: 767px) {
-  .dining-area .dining-caption {
-    padding: 55px 38px 53px 29px; } }
+
 @media (max-width:768px){
   .dining-area .single-dining-area.left-img::before {
     width: 80%;
@@ -1218,10 +1210,69 @@ i>.icon-text{
 }
 
 /* reservation */
+#Reservation{
+  width: 100%;
+  background: #fffaf6;
+}
 #Reservation h1{
   font-size: 35px;
   color: #dbb99e;
   font-family: 'Nanum Myeongjo', serif;
   font-weight: bold;
-  padding: 10% 0 3% 0%;
+  padding: 2% 0 2% 0%;
+}
+#Reservation select{
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#Reservation input{
+  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+#Reservation .bg{
+  background: #fff;
+  border-radius: 5px;
+  padding: 1%;
+}
+#Reservation .section{
+  width: 50%;
+  margin: 0 auto;
+}
+#Reservation .col-sm-2{
+  margin: 0 auto;
+  padding: 0 0;
+}
+#Reservation .check-availabilty{
+  background: #fff;
+  margin: 0 auto;
+}
+#Reservation button {
+    width: 20%; 
+    color: #fff;
+    background-color: #e3985b;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 11px 0;
+    border-radius: 4px;
+    border: none;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+  #Reservation button:hover {
+    opacity: 0.9;
+  }
+
+.dark-bg{
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+}
+.dark-bg img{
+  width: 100%;
 }
