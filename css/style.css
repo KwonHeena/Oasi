@@ -921,7 +921,7 @@ i>.icon-text{
 }
 .dining-area .single-dining-area {
   position: relative;
-  padding: 150px 0;
+  padding: 9% 0;
 }
 .dining-area .single-dining-area.left-img {
   position: relative;
@@ -934,7 +934,7 @@ i>.icon-text{
     bottom: 0;
     background-image: url(../assets/img/swimming-pool.jpg);
     width: 50%;
-    height: 550px;
+    height: 80%;
     border-radius: 5px;
     margin-left :10%;
     background-size: cover;
@@ -951,8 +951,8 @@ i>.icon-text{
     bottom: 0;
     background-image: url(../assets/img/restaurant.jpg);
     width: 50%;
+    height: 80%;
     margin-right:10%;
-    height: 530px;
     border-radius: 5px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1019,7 +1019,7 @@ i>.icon-text{
   bottom: 0;
   background-image: url(../assets/img/wedding.jpg);
   width: 50%;
-  height: 550px;
+  height: 90%;
   border-radius: 5px;
   margin-left :10%;
   background-size: cover;
@@ -1030,7 +1030,7 @@ i>.icon-text{
   padding: 8% 5% 2% 10%;
   border-radius: 5px;
   position: relative;
-  bottom: 3%;
+  bottom: 10%;
   margin-left: 20%;
 }
 .dining-area .dining-caption3 span {
@@ -1052,7 +1052,73 @@ i>.icon-text{
   color: #000;
   font-size: 18px;
 }
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .dining-area .dining-caption {
+    padding: 60px 69px 68px 61px; } }
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .dining-area .dining-caption {
+    padding: 57px 59px 65px 79px; } }
+@media (max-width: 767px) {
+  .dining-area .dining-caption {
+    padding: 55px 38px 53px 29px; } }
+@media (max-width:768px){
+  .dining-area .single-dining-area.left-img::before {
+    width: 80%;
+    height: 450px;
+    margin-left :1%;
+}
+.dining-area .single-dining-area.right-img::before {
+  width: 80%;
+  height: 450px;
+  margin-right :1%;
+  background-position: right;
+}
+.dining-area .single-dining-area.end-img::before {
+  width: 80%;
+  height: 450px;
+  margin-left :1%;
+}
+.dining-area .dining-caption1 {
+  padding: 5% 1% 1% 5%;
+  border-radius: 5px;
+  position: relative;
+  bottom: 8%;
+  margin-left: 35%;
+  left: 21%;
+}
+.dining-area .dining-caption2 {
+  width: 59%;
+  padding: 6% 5% 1% 2%;
+  border-radius: 5px;
+  position: relative;
+  bottom: 11.5%;
+  margin-right: 20%;
+  right: 21%;
+}
+.dining-area .dining-caption3 {
+  width: 59%;
+  padding: 6% 3% 1% 5%;
+  border-radius: 5px;
+  position: relative;
+  bottom: -10%;
+  margin-right: 20%;
+  left: 42%;
+}
+#Facilites{
+  padding-bottom: 20%;
+}
+#Facilites h1{
+  padding: 15% 0 12% 0%; 
+}
+}
+@media (max-width:500px){
+  .dining-area .single-dining-area.left-img::before {
+    position: block;
+}
+.dining-area .dining-caption1 {
+  position: block;
+}
+}
 /* Facilites end */
 /* map */
 #map{
