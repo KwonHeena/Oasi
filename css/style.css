@@ -665,7 +665,16 @@ body{
     width: 120px;
   }
 }
-
+@media (max-width: 699px){
+  .testimonials .testimonial-item p {
+    padding-top: 10%;
+  }
+}
+@media (max-width: 600px){
+  .testimonials .testimonial-item p {
+    padding-top: 13%;
+  }
+}
 @media (max-width: 500px){
   .testimonials .testimonial-item p {
     padding-top: 15%;
