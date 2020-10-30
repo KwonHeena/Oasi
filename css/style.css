@@ -1084,7 +1084,7 @@ i>.icon-text{
     margin-top: 3%;
     border-radius: 5px;
   }
-  @media (min-width: 500px){
+  @media (max-width: 500px){
     .facilites-img1{
       height: 300px;
     }
