@@ -13,14 +13,18 @@
       height: 1px;
       background: #e9af85;
       position: relative;
-      margin-bottom: 5%;
+      margin-bottom: 2%;
+  }
+  .map-text{
+    font-size: 20px;
+    color: #e9af85;
   }
   #map h1{
     font-size: 35px;
     color: #dbb99e;
     font-family: 'Nanum Myeongjo', serif;
     font-weight: bold;
-    padding: 0 0 5% 0%; 
+    padding: 7% 0 5% 0%; 
   }
   .subway>p{
     font-weight: normal;
@@ -29,13 +33,6 @@
   }
   .map{
     padding-bottom: 1%;
-  }
-  #map h1{
-    font-size: 35px;
-    color: #dbb99e;
-    font-family: 'Nanum Myeongjo', serif;
-    font-weight: bold;
-    padding: 10% 0 3% 0%;
   }
   #map button {
     background:none;
@@ -77,15 +74,21 @@
     margin: 0 auto;
     height: auto;
     background: #fff;
+    padding-top: 3%;
     padding-bottom: 2%;
   }
   
   @media (max-width:768px){
     #map h1{
-      padding: 13% 0 6% 0%;
+      font-size: 30px;
+      padding: 10% 0 6% 0%;
     }
-    .map img{
-      width: 100%;
+    #map iframe{
+      width: 83%;
+      height: 350px;
+    }
+    .map_inner{
+      width: 80%;
     }
     .map_box{
       width: 100%;
@@ -94,18 +97,42 @@
       background: rgba(255, 255, 255, 0.7);
     }
   }
-  
+  @media (max-width:500px){
+    #map{
+      padding-bottom: 10%;
+    }
+    #map h1{
+      font-size: 30px;
+      padding: 10% 0 6% 0%;
+    }
+    #map iframe{
+      width: 100%;
+      height: 350px;
+    }
+    .map_inner{
+      width: 94%;
+      margin-top: 5%;
+    }
+    .map_box{
+      width: 100%;
+      margin: 0 auto;
+      height: 220px;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+  }
   /* reservation */
   #Reservation{
     width: 100%;
     background: #fffaf6;
+    padding-bottom: 5%;
   }
   #Reservation h1{
     font-size: 35px;
     color: #dbb99e;
     font-family: 'Nanum Myeongjo', serif;
     font-weight: bold;
-    padding: 2% 0 2% 0%;
+    padding: 3% 0 3% 0%;
   }
   #Reservation select{
     border-bottom: 1px solid #ccc;
@@ -153,12 +180,148 @@
     #Reservation button:hover {
       opacity: 0.9;
     }
-  
-  .dark-bg{
-    width: 80%;
-    background-color: rgba(0, 0, 0, 0.7);
-    margin: 0 auto;
+    #Reservation .tab-link{
+      width: 33%;
+    }
+    #Reservation .tabs {
+    margin: 0;
+    list-style: none;
+    height: 32px; /*--Set height of tabs--*/
+    border: 1px solid #ccc;
+    width: 100%;
+    height: auto;
+}
+#Reservation ul.tabs{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+#Reservation ul.tabs li{
+  background: none;
+  color: #222;
+  display: inline-block;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 20px;
+}
+#Reservation ul.tabs li.current{
+  background: #dbb99e;
+  color: #222;
+}
+#Reservation .tab-content{
+  display: none;  
+  padding: 15px 0;
+}
+.double-inner{
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+#Reservation .tab-content.current{
+  display: inherit;
+}
+#tab-1{
+  display: flex;
+}
+#tab-1 img{
+  width: 100%;
+}
+#tab-1 p{
+  padding-top: 20%;
+}
+#tab-2{
+  display: flex;
+}
+#tab-2 img{
+  width: 100%;
+}
+#tab-2 p{
+  padding-top: 20%;
+}
+#tab-3{
+  display: flex;
+}
+#tab-3 img{
+  width: 100%;
+}
+#tab-3 p{
+  padding-top: 20%;
+}
+@media(max-width: 768px){
+  #Reservation h1{
+    font-size: 35px;
+    color: #dbb99e;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: bold;
+    padding: 10% 0 7% 0%;
   }
-  .dark-bg img{
+  #Reservation .tab-link{
+    width: 32.85%;
+  }
+  #tab-1 p{
+    width: 260%;
+    padding-top: 15%;
+  }
+  #tab-2 p{
+    width: 260%;
+    padding-top: 15%;
+  }
+  #tab-3 p{
+    width: 260%;
+    padding-top: 15%;
+  }
+  .double-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  #tab-1 img{
+    width: 177.5%;
+  }
+  #tab-2 img{
+    width: 177.5%;
+  }
+  #tab-3 img{
+    width: 177.5%;
+  }
+    #Reservation .bg input{
+    font-size: 11px;
+    }
+  .form-control{
+    padding: 0 0;
+  }
+}
+@media(max-width: 576px){
+  #Reservation .tab-link{
     width: 100%;
   }
+  #tab-1 img{
+    width: 100%;
+  }
+  #tab-2 img{
+    width: 100%;
+  }
+  #tab-3 img{
+    width: 100%;
+  }
+  #tab-1 p{
+    width: 100%;
+    padding-top: 7%;
+  }
+  #tab-2 p{
+    width: 100%;
+    padding-top: 7%;
+  }
+  #tab-3 p{
+    width: 100%;
+    padding-top: 7%;
+  }
+  #Reservation .bg input{
+    font-size: 15px;
+    }
+  #Reservation button {
+    width: 50%; 
+    margin-top: 5%;
+  }
+  #Reservation .bg{
+    padding: 5% 5%;
+  }
+}
