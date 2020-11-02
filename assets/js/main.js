@@ -1,11 +1,3 @@
-/**
-* Template Name: Lonely - v2.2.0
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-!(function($) {
-  "use strict";
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 1;
@@ -170,17 +162,16 @@ $(document).ready(function(){
 // aos
   AOS.init();
 
-  var dateAndTime = function() {
-    $('#m_date').datepicker({
-      'format': 'm/d/yyyy',
-      'autoclose': true
-    });
-    $('#checkin_date, #checkout_date').datepicker({
-      'format': 'd MM, yyyy',
-      'autoclose': true
-    });
-    $('#m_time').timepicker();
-  };
-  dateAndTime();
-})(jQuery);
-
+  $(document).ready(function(){
+   
+    $('#Reservation ul.tabs li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+   
+      $('#Reservation ul.tabs li').removeClass('current');
+      $('#Reservation .tab-content').removeClass('current');
+   
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    })
+   
+  })

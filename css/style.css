@@ -937,6 +937,7 @@ i>.icon-text{
   height: 550px;
   background-image: url(../assets/img/swimming-pool.jpg);
   background-size: cover;
+  background-position: center;
 }
 .dining-caption1-info1{
   width: 40%;
@@ -974,6 +975,7 @@ i>.icon-text{
   height: 550px;
   background-image: url(../assets/img/restaurant.jpg);
   background-size: cover;
+  background-position: center;
 }
 .dining-caption1-info2{
   width: 40%;
@@ -1013,6 +1015,7 @@ i>.icon-text{
   height: 550px;
   background-image: url(../assets/img/wedding.jpg);
   background-size: cover;
+  background-position: center;
 }
 .dining-caption1-info3{
   width: 37%;
