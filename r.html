@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta property="og:description" content="모두를 위한 호텔 Oasi입니다."/>
+  <meta property="og:image" content="assets/img/main-bg.jpg"/>
+  <meta property="og:title" content="Hotel Oasi"/>
+  <link rel="shortcut icon" href="assets/img/icon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.ico">
+  <title>호텔 Oasi</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-1.12.2.js"
+  integrity="sha256-VUCyr0ZXB5VhBibo2DkTVhdspjmxUgxDGaLQx7qb7xY="
+  crossorigin="anonymous"></script>
+  <!-- icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css"> 
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/map.css">
+  </head>
+    <body>
+       <!-- navigation -->
+       <header id="header" class="fixed-top">
+        <div class="container d-flex align-items-center">
+            <a href="index.html" class="logo mr-auto"><img src="assets/img/top_logo.png" alt="" class="img-fluid"></a>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li class="drop-down"><a href="double.html">Rooms</a>
+                        <ul>
+                            <li><a href="double.html">Double Room</a></li>
+                            <li><a href="delux.html">Delux Room</a></li>
+                            <li><a href="luxury.html">Luxury Room</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Facilites.html">Facilites</a></li>
+                    <li><a href="Map.html">Map</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                </ul>
+            </nav><!-- .nav-menu -->
+        </div>
+    </header><!-- End Header -->
+    <section id="Reservation">
+      <div class="container-fluid">
+        <h1 class="text-center">Reservation</h1>
+      </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="container">
+                        <ul class="tabs text-center">
+                            <li class="tab-link current" data-tab="tab-1">Double Room</li>
+                            <li class="tab-link" data-tab="tab-2">Delux Room</li>
+                            <li class="tab-link" data-tab="tab-3">Luxury Room</li>
+                        </ul>
+                    <div id="tab-1" class="tab-content current">
+                        <div class="row double-inner">
+                            <div class="col-sm-7">
+                                <img src="assets/img/single1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-5">
+                                <p>기준인원 | 2명 / 최대3명<br>
+                                    크기　|　40(m²)<br>
+                                    일반　|　공기청정기, PC, TV, IPTV, 넷플릭스, 인터넷, 와이파이, 에어컨, 미니냉장고, 전자레인지, 정수기<br>
+                                    욕실　|　비데, 샴푸, 린스, 바디클렌저, 폼클렌징, 일회용 비누, 칫솔, 치약, 물컵<br>
+                                    기타　|　커피, 티백, 티스푼, 물컵, 티포트, 옷걸이, 가운,  헤어드라이기, 로션, 빗, 헤어용품</p>
+                            </div>
+                        </div>
+                        <div class="container bg">
+                            <div class="row check-availabilty" id="next">
+                              <div class="col-sm-2">
+                                <div class="form-group">
+                                     <span class="form-label">Check-in</span>
+                                                  <input class="form-control" type="date" required>
+                                              </div>
+                                </div>
+                                <div class="col-sm-2">
+                                  <div class="form-group">
+                                    <span class="form-label">Check-out</span>
+                                    <input class="form-control" type="date" required>
+                                 </div>
+                              </div>
+                            <div class="col-sm-2">
+                              <div class="field-icon-wrap">
+                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                <span class="form-label">Room type</span>
+                                <select name="" id="children" class="form-control">
+                                  <option>Double room</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-sm-2">
+                                  <div class="field-icon-wrap">
+                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                    <span class="form-label">Adult</span>
+                                    <select name="" id="adults" class="form-control">
+                                      <option value="">1</option>
+                                      <option value="">2</option>
+                                      <option value="">3</option>
+                                      <option value="">4</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <div class="col-sm-2">
+                              <div class="field-icon-wrap">
+                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                <span class="form-label">Children</span>
+                                <select name="" id="children" class="form-control">
+                                  <option value="">0</option>
+                                  <option value="">1</option>
+                                  <option value="">2</option>
+                                  <option value="">3</option>
+                                </select>
+                              </div>
+                            </div>
+                            </div>
+                            <button class="btn btn-primary btn-block text-white" onclick="alert('예약가능한 객실이 없습니다.')">Reservation</button>
+                        </div>
+                    </div>
+                </div>
+                    <div id="tab-3" class="tab-content">
+                        <div class="row double-inner">
+                            <div class="col-sm-7">
+                                <img src="assets/img/luxury.jpg" alt="">
+                            </div>
+                            <div class="col-sm-5">
+                                <p>기준인원 | 4명 / 최대6명<br>
+                                    크기　|　67(m²)<br>
+                                    일반　|　안마의자, 에어드레서, 산소발생기, 공기청정기, PC, TV, IPTV, 넷플릭스, 인터넷, 와이파이, 에어컨,<br>미니냉장고, 전자레인지, 정수기<br>
+                                    욕실　|　비데, 샴푸, 린스, 바디클렌저, 폼클렌징, 일회용 비누, 칫솔, 치약, 물컵<br>
+                                    기타　|　커피, 티백, 티스푼, 물컵, 티포트, 옷걸이, 가운,  헤어드라이기, 로션, 빗, 헤어용품
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="container bg">
+                                    <div class="row check-availabilty" id="next">
+                                      <div class="col-sm-2">
+                                        <div class="form-group">
+                                             <span class="form-label">Check-in</span>
+                                                          <input class="form-control" type="date" required>
+                                                      </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                          <div class="form-group">
+                                            <span class="form-label">Check-out</span>
+                                                                  <input class="form-control" type="date" required>
+                                                              </div>
+                                          </div>
+                                        <div class="col-sm-2">
+                                          <div class="field-icon-wrap">
+                                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                            <span class="form-label">Room type</span>
+                                            <select name="" id="children" class="form-control">
+                                              <option>Luxury Room</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                              <div class="field-icon-wrap">
+                                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                                <span class="form-label">Adult</span>
+                                                <select name="" id="adults" class="form-control">
+                                                  <option value="">1</option>
+                                                  <option value="">2</option>
+                                                  <option value="">3</option>
+                                                  <option value="">4</option>
+                                                </select>
+                                              </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                          <div class="field-icon-wrap">
+                                            <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                            <span class="form-label">Children</span>
+                                            <select name="" id="children" class="form-control">
+                                              <option value="">0</option>
+                                              <option value="">1</option>
+                                              <option value="">2</option>
+                                              <option value="">3</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <button class="btn btn-primary btn-block text-white" onclick="alert('예약가능한 객실이 없습니다.')">Reservation</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-content">
+                        <div class="row double-inner">
+                            <div class="col-sm-7">
+                                <img src="assets/img/delux1.jpg" alt="">
+                            </div>
+                            <div class="col-sm-5">
+                                <p>기준인원 | 2명 / 최대3명<br>
+                                    크기　|　50(m²)<br>  
+                                    일반　|　에어드레서, 산소발생기, 공기청정기, PC, TV, IPTV, 넷플릭스, 인터넷, 와이파이, 에어컨,<br>미니냉장고, 전자레인지, 정수기<br>
+                                    욕실　|　비데, 샴푸, 린스, 바디클렌저, 폼클렌징, 일회용 비누, 칫솔, 치약, 물컵<br>
+                                    기타　|　커피, 티백, 티스푼, 물컵, 티포트, 옷걸이, 가운,  헤어드라이기, 로션, 빗, 헤어용품
+                            </div>
+                        </div>
+                        <div class="container bg">
+                            <div class="row check-availabilty" id="next">
+                              <div class="col-sm-2">
+                                <div class="form-group">
+                                     <span class="form-label">Check-in</span>
+                                                  <input class="form-control" type="date" required>
+                                              </div>
+                                </div>
+                                <div class="col-sm-2">
+                                  <div class="form-group">
+                                    <span class="form-label">Check-out</span>
+                                                          <input class="form-control" type="date" required>
+                                                      </div>
+                                  </div>
+                                <div class="col-sm-2">
+                                  <div class="field-icon-wrap">
+                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                    <span class="form-label">Room type</span>
+                                    <select name="" id="children" class="form-control">
+
+                                      <option>Delux room</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="col-sm-2">
+                                      <div class="field-icon-wrap">
+                                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                        <span class="form-label">Adult</span>
+                                        <select name="" id="adults" class="form-control">
+                                          <option value="">1</option>
+                                          <option value="">2</option>
+                                          <option value="">3</option>
+                                          <option value="">4</option>
+                                        </select>
+                                      </div>
+                                </div>
+                                <div class="col-sm-2">
+                                  <div class="field-icon-wrap">
+                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                    <span class="form-label">Children</span>
+                                    <select name="" id="children" class="form-control">
+                                      <option value="">0</option>
+                                      <option value="">1</option>
+                                      <option value="">2</option>
+                                      <option value="">3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="btn btn-primary btn-block text-white" onclick="alert('예약가능한 객실이 없습니다.')">Reservation</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2">
+          <img src="assets/img/bottom_logo.png" alt="">
+        </div>
+        <div class="col-sm-6 footer_top">
+          <a href="#">회사소개 |</a>
+          <a href="#"> 개인정보처리방침</a><br><br>
+            <p>Oasi 호텔 | 경기도 김포시 마산동<br>
+              대표이사 : 권희나　개인정보관리 책임자 : 권희나<br>
+              사업자등록번호 : 010-77-549424　통신판매업신고 : 2020-마산동-9424</p>
+            <p class="copyright">COPYRIGHT ⓒ 2020 HOTEL Oasi ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="col-sm-4 footer_right">
+          <p>객실예약　031-7754-0000<br>
+            레스토랑 예약 및 기타 안내　031-7753-0000<br>
+            이메일 문의　kty9334@naver.com
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/jquery-sticky/jquery.sticky.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/jquery.timepicker.min.js"></script> 
+  <script src="assets/js/bootstrap-datepicker.js"></script> 
+  <script src="assets/js/main.js"></script>
+</body>
+
+
