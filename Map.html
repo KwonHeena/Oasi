@@ -58,12 +58,36 @@
             </nav><!-- .nav-menu -->
         </div>
     </header>  
-    <section id="map">
+    <section id="maps">
       <div class="container">
         <h1 class="text-center">오시는 길</h1>
         <div class="row">
           <div class="col-sm-12 map text-center">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3160.280368628866!2d126.71691781564913!3d37.619092328873506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c85982929adc1%3A0xf6e7ea7746ae18d2!2z7ZWY7J2066-465SU7Ja07Lu07ZOo7YSw7ZWZ7JuQ!5e0!3m2!1sko!2skr!4v1603784720094!5m2!1sko!2skr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div id="map"></div>
+            <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=d1b79d0d7a67129a5474f5553dde7ea2"></script>
+            <script>
+              var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                  mapOption = { 
+                      center: new kakao.maps.LatLng(37.619227, 126.719075), // 지도의 중심좌표
+                      level: 3 // 지도의 확대 레벨
+                  };
+              
+              var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+              
+              // 마커가 표시될 위치입니다 
+              var markerPosition  = new kakao.maps.LatLng(37.619227, 126.719075); 
+              
+              // 마커를 생성합니다
+              var marker = new kakao.maps.Marker({
+                  position: markerPosition
+              });
+              
+              // 마커가 지도 위에 표시되도록 설정합니다
+              marker.setMap(map);
+              
+              // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+              // marker.setMap(null);    
+              </script>
           </div>
           <div class="map_inner">
             <div class="col-sm-12 text-center">

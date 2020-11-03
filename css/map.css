@@ -1,5 +1,5 @@
 /* map */
-#map{
+#maps{
     width: 100%;
     height: auto;
     background: #fffaf6;
@@ -7,6 +7,11 @@
     padding-bottom: 7%;
     font-size: 16px;
   }
+#map{
+  width: 80%;
+  height: 550px;
+  margin: 0 auto;
+}
   .bar1{
       width: 90px;
       margin: 0 auto;
@@ -19,7 +24,7 @@
     font-size: 20px;
     color: #e9af85;
   }
-  #map h1{
+  #maps h1{
     font-size: 35px;
     color: #dbb99e;
     font-family: 'Nanum Myeongjo', serif;
@@ -34,7 +39,7 @@
   .map{
     padding-bottom: 1%;
   }
-  #map button {
+  #maps button {
     background:none;
     border:0;
     outline:0;
@@ -79,13 +84,9 @@
   }
   
   @media (max-width:768px){
-    #map h1{
+    #maps h1{
       font-size: 30px;
       padding: 10% 0 6% 0%;
-    }
-    #map iframe{
-      width: 83%;
-      height: 350px;
     }
     .map_inner{
       width: 80%;
@@ -98,16 +99,12 @@
     }
   }
   @media (max-width:500px){
-    #map{
+    #maps{
       padding-bottom: 10%;
     }
-    #map h1{
+    #maps h1{
       font-size: 30px;
       padding: 10% 0 6% 0%;
-    }
-    #map iframe{
-      width: 100%;
-      height: 350px;
     }
     .map_inner{
       width: 94%;
